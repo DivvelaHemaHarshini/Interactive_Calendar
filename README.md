@@ -61,7 +61,9 @@ date-fns (date utilities)
 Framer Motion (animations)
 localStorage (data persistence)
 
-Project Structure
+## 📂 Project Structure
+
+```bash
 src/
 │
 ├── components/
@@ -79,6 +81,7 @@ src/
 │
 ├── App.jsx
 └── main.jsx
+```
 
 
 Getting Started
