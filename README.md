@@ -39,12 +39,17 @@ Clean and minimal UX improvement.
 
 <h3>Hero Image (Monthly Theme)</h3>
 Each month displays a unique background image
+
 Dynamic text overlay (month + year)
+
 Styled to mimic a real wall calendar design
 
 Hero Image (Monthly Theme)
+
 Each month displays a unique background image
+
 Dynamic text overlay (month + year)
+
 Styled to mimic a real wall calendar design
 
 Fully Responsive Design
