@@ -38,6 +38,7 @@ Smooth fade-in tooltip (no default browser tooltip).
 Clean and minimal UX improvement.
 
 <h3>Hero Image (Monthly Theme)</h3>
+
 Each month displays a unique background image
 
 Dynamic text overlay (month + year)
@@ -53,10 +54,15 @@ Dynamic text overlay (month + year)
 Styled to mimic a real wall calendar design
 
 Fully Responsive Design
+
 Mobile:
+
 Stacked layout (Image → Calendar → Notes)
+
 Tablet/Desktop:
+
 Calendar and Notes side-by-side
+
 Optimized spacing, sizing, and touch interactions.
 
 <h3>Tech Stack</h3>
@@ -89,7 +95,8 @@ src/
 ```
 
 
-Getting Started
+<h3>Getting Started</h3>
+
 1. Clone the Repository
 git clone https://github.com/DivvelaHemaHarshini/Interactive_Calendar.git
 cd interactive-calendar
