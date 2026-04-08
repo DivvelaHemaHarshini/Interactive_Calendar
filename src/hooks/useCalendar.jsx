@@ -54,5 +54,6 @@ export default function useCalendar() {
     selectDay,
     currentNote,
     updateNote,
+    notesMap,
   };
 }

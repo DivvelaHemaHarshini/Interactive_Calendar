@@ -10,11 +10,11 @@ export default function NotesSection({ currentNote, updateNote, range }) {
       ) : (
         <>
           <textarea
-            value={currentNote}
-            onChange={(e) => updateNote(e.target.value)}
-            className="w-full h-40 border-b border-gray-300 outline-none resize-none"
-            placeholder="Write notes..."
-          />
+  value={currentNote}
+  onChange={(e) => updateNote(e.target.value)}
+  className="w-full h-32 md:h-full text-sm md:text-base p-2 border rounded resize-none"
+  placeholder="Write notes..."
+/>
 
           <p className="text-xs mt-2 text-gray-500">
             {range.start.toDateString()} → {range.end.toDateString()}

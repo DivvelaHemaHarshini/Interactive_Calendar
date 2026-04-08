@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 export default function HeroPanel({ month }) {
   const monthImages = {
     0: "january.jpg",
@@ -17,12 +18,15 @@ export default function HeroPanel({ month }) {
   const image = monthImages[month.getMonth()];
 
   return (
-    <div className="relative h-64 overflow-hidden">
-      
+<div className="relative h-48 md:h-64 overflow-hidden">      
       {/* IMAGE */}
-      <img
+      <motion.img
+        key={month.getMonth()} // important for animation
         src={image}
         alt="month"
+        initial={{ opacity: 0, scale: 1.05 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
         className="w-full h-full object-cover"
       />
 

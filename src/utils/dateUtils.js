@@ -4,7 +4,8 @@ import {
   eachDayOfInterval,
   isWithinInterval,
   isSameDay,
-  getDay,
+  startOfWeek,
+  endOfWeek
 } from "date-fns";
 
 export function getDaysInMonth(date) {
@@ -29,12 +30,8 @@ export function rangeKey(start, end) {
 
 // ✅ NEW FUNCTION
 export function getCalendarDays(date) {
-  const days = getDaysInMonth(date);
+  const start = startOfWeek(startOfMonth(date), { weekStartsOn: 1 }); // Monday
+  const end = endOfWeek(endOfMonth(date), { weekStartsOn: 1 });
 
-  let startDay = getDay(days[0]);
-  startDay = startDay === 0 ? 6 : startDay - 1;
-
-  const emptyDays = Array(startDay).fill(null);
-
-  return [...emptyDays, ...days];
+  return eachDayOfInterval({ start, end });
 }

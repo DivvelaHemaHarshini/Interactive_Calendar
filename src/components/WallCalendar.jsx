@@ -12,6 +12,7 @@ export default function WallCalendar() {
     selectDay,
     currentNote,
     updateNote,
+    notesMap,
   } = useCalendar();
 
   return (
@@ -44,18 +45,40 @@ export default function WallCalendar() {
         </div>
 
         {/* CONTENT */}
-        <div className="grid md:grid-cols-[1fr_2fr] p-6 gap-4">
-          <NotesSection
-            currentNote={currentNote}
-            updateNote={updateNote}
-            range={range}
-          />
+{/* CONTENT */}
+<div className="p-4 md:p-6">
+  {/* CONTENT */}
+<div className="p-4 md:p-6 flex flex-col gap-4">
 
-          <CalendarGrid
-            month={month}
-            range={range}
-            selectDay={selectDay}
-          />
+
+  {/* 📱 MOBILE ORDER: Calendar first, Notes second */}
+  {/* 💻 DESKTOP ORDER: Notes left, Calendar right */}
+
+  <div className="flex flex-col md:flex-row gap-4">
+
+    {/* 📝 Notes */}
+    <div className="order-2 md:order-1 flex-1">
+      <NotesSection
+        currentNote={currentNote}
+        updateNote={updateNote}
+        range={range}
+      />
+    </div>
+
+    {/* 📅 Calendar */}
+    <div className="order-1 md:order-2 flex-1">
+      <CalendarGrid
+        month={month}
+        range={range}
+        selectDay={selectDay}
+        notesMap={notesMap}
+      />
+    </div>
+
+  </div>
+</div>
+
+         
         </div>
       </div>
     </div>
