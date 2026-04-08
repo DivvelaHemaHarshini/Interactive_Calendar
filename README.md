@@ -5,28 +5,39 @@ Inspired by a physical wall calendar, this app combines clean UI, smooth animati
 
 🔗 Live Demo: https://interactive-calendar-virid.vercel.app/
 
-Features:
+<h3>Features:</h3>
 Monthly calendar view with Monday as first day
+
 Navigate between months using arrow controls
+
 Fully aligned 7-column calendar grid
+
 Highlights:
 🟢 Start Date
 🔵 End Date
 🔷 Selected Date Range
 
-Notes System:
+<h3>Notes System:</h3>
+
 Add notes for a selected date range
+
 Notes are stored in localStorage
+
 Each saved note is:
+
 Linked to a specific date range
+
 Persisted across page reloads
 
-Floating Tooltip (Custom UI)
+<h3>Floating Tooltip (Custom UI)</h3>
+
 Hover over a date to preview notes.
+
 Smooth fade-in tooltip (no default browser tooltip).
+
 Clean and minimal UX improvement.
 
-Hero Image (Monthly Theme)
+<h3>Hero Image (Monthly Theme)</h3>
 Each month displays a unique background image
 Dynamic text overlay (month + year)
 Styled to mimic a real wall calendar design
@@ -87,26 +98,46 @@ Open: http://localhost:5173
 npm run build
 
 <h3>Key Highlights</h3>
+
 Clean separation of logic using custom hooks
-Reusable and modular component architecture
-Smooth UI animations and transitions
-Real-world UX patterns:
-Range selection
-Tooltips
-Visual indicators
-Fully responsive across devices
+
+Reusable and modular component architecture.
+
+Smooth UI animations and transitions.
+
+<h3>Real-world UX patterns:</h3>
+
+Range selection.
+
+Tooltips.
+
+Visual indicators.
+
+Fully responsive across devices.
+
 
 <h3>Challenges Solved</h3>
+
 Managing date range selection logic
+
 Avoiding null values in calendar grid
+
 Syncing notes with selected ranges
+
 Implementing custom tooltip instead of default browser behavior
+
 Ensuring smooth animations without breaking layout
+
 Making the entire app responsive
 
 <h3>Future Improvements</h3>
+
 Drag-to-select date range
+
 Dark mode 🌙
+
 Holiday/event indicators.
+
 Note categories (color-coded).
+
 Backend integration for persistent storage.
