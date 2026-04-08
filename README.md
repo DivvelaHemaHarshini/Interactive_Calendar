@@ -1,16 +1,112 @@
-# React + Vite
+<h2>Interactive Wall Calendar</h2>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive wall calendar web application built using React and Vite.
+Inspired by a physical wall calendar, this app combines clean UI, smooth animations, and practical features like date range selection and note-taking.
 
-Currently, two official plugins are available:
+🔗 Live Demo: https://interactive-calendar-virid.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Features:
+Monthly calendar view with Monday as first day
+Navigate between months using arrow controls
+Fully aligned 7-column calendar grid
+Highlights:
+🟢 Start Date
+🔵 End Date
+🔷 Selected Date Range
 
-## React Compiler
+Notes System:
+Add notes for a selected date range
+Notes are stored in localStorage
+Each saved note is:
+Linked to a specific date range
+Persisted across page reloads
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Floating Tooltip (Custom UI)
+Hover over a date to preview notes.
+Smooth fade-in tooltip (no default browser tooltip).
+Clean and minimal UX improvement.
 
-## Expanding the ESLint configuration
+Hero Image (Monthly Theme)
+Each month displays a unique background image
+Dynamic text overlay (month + year)
+Styled to mimic a real wall calendar design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Hero Image (Monthly Theme)
+Each month displays a unique background image
+Dynamic text overlay (month + year)
+Styled to mimic a real wall calendar design
+
+Fully Responsive Design
+Mobile:
+Stacked layout (Image → Calendar → Notes)
+Tablet/Desktop:
+Calendar and Notes side-by-side
+Optimized spacing, sizing, and touch interactions.
+
+Tech Stack
+React (Vite)
+Tailwind CSS
+date-fns (date utilities)
+Framer Motion (animations)
+localStorage (data persistence)
+
+Project Structure
+src/
+│
+├── components/
+│   ├── CalendarGrid.jsx     # Calendar layout + animation
+│   ├── DayCell.jsx          # Individual day UI + tooltip
+│   ├── HeroPanel.jsx        # Monthly image header
+│   ├── NotesSection.jsx     # Notes input + sync
+│   └── CalendarHeader.jsx   # Month navigation
+│
+├── hooks/
+│   └── useCalendar.js       # Central state management
+│
+├── utils/
+│   └── dateUtils.js         # Date calculations (range, grid)
+│
+├── App.jsx
+└── main.jsx
+
+
+Getting Started
+1. Clone the Repository
+git clone https://github.com/DivvelaHemaHarshini/Interactive_Calendar.git
+cd interactive-calendar
+
+2. Install Dependencies
+npm install
+
+3. Run Development Server
+npm run dev
+
+Open: http://localhost:5173
+
+4. Build for Production
+npm run build
+
+<h3>Key Highlights</h3>
+Clean separation of logic using custom hooks
+Reusable and modular component architecture
+Smooth UI animations and transitions
+Real-world UX patterns:
+Range selection
+Tooltips
+Visual indicators
+Fully responsive across devices
+
+<h3>Challenges Solved</h3>
+Managing date range selection logic
+Avoiding null values in calendar grid
+Syncing notes with selected ranges
+Implementing custom tooltip instead of default browser behavior
+Ensuring smooth animations without breaking layout
+Making the entire app responsive
+
+<h3>Future Improvements</h3>
+Drag-to-select date range
+Dark mode 🌙
+Holiday/event indicators.
+Note categories (color-coded).
+Backend integration for persistent storage.
