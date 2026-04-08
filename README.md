@@ -54,7 +54,7 @@ Tablet/Desktop:
 Calendar and Notes side-by-side
 Optimized spacing, sizing, and touch interactions.
 
-Tech Stack
+<h3>Tech Stack</h3>
 React (Vite)
 Tailwind CSS
 date-fns (date utilities)
